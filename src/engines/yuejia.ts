@@ -1,13 +1,4 @@
 /**
- * @license MIT
- * @package bigfishmarquis-qimen
- * @name 鲲侯 · 星河易道 奇门排盘引擎
- * @see https://github.com/perfhelf/bigfishmarquis-qimen
- *
- * ⚠️ OPEN-SOURCE COPY — 此文件为开源副本，请勿在此修改。
- * 原始代码位于 metaphysics-app/src/qimen/
- */
-/**
  * 月家奇门引擎
  * 复杂度：★★★ | 统一阴遁 | 180年三元 × 5年Block周期
  *
@@ -132,9 +123,12 @@ export function yueJiaGenerate(
   const monthStemForFind = monthGz.stem === '甲' ? monthXunShou.liuYi : monthGz.stem;
   const skyStars = layoutSkyStars(zhiFuStar, monthStemForFind, earthPlate);
 
-  // STEP 5: 排人盘八门 (步进法 — 值使门从固定老家出发, palace-1含中5)
+  // STEP 5: 排人盘八门 (步进法 — 值使门从六仪所在宫出发, palace-1含中5)
+  //   ⚠️ 月家门起步 = 六仪落宫 (liuYiPalace), 非门固定老家 (doorHome)
+  //       当六仪在中5时, 0步→5→寄2, 与doorHome=2结果一致
+  //       但 >0步时两者分叉: 从5退1=4(✓) vs 从2退1=1(✗)
   //   N = (月支序 - 旬首地支序 + 12) % 12
-  //   从门固定老家开始, 向下走 N 步 (每步palace-1, 0→9循环, 含中5)
+  //   从六仪宫开始, 向下走 N 步 (每步palace-1, 0→9循环, 含中5)
   //   落宫5→寄坤2, 其余门沿 YANG_ORDER 遍历
   const xunShouBranch = monthXunShou.xunShou.charAt(1);
   const xunBranchIdx = BRANCHES.indexOf(xunShouBranch as any);
@@ -142,7 +136,7 @@ export function yueJiaGenerate(
   const branchSteps = ((monthBranchIdx - xunBranchIdx) % 12 + 12) % 12;
 
   const doorHome = DOOR_HOME_PALACE[zhiShiDoor] || 1;
-  let zhiShiLandPalace = doorHome;
+  let zhiShiLandPalace = liuYiPalace; // ← 从六仪宫出发 (非doorHome)
   for (let s = 0; s < branchSteps; s++) {
     zhiShiLandPalace--;
     if (zhiShiLandPalace < 1) zhiShiLandPalace = 9;
