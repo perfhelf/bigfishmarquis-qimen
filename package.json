@@ -1,0 +1,26 @@
+{
+  "name": "bigfishmarquis-qimen",
+  "version": "1.0.0",
+  "description": "鲲侯 · 星河易道 奇门遁甲排盘引擎 — 全自研，覆盖年/月/日/时家四层排盘，支持拆补/茅山/置闰三种起局法",
+  "main": "src/engine.ts",
+  "types": "src/types.ts",
+  "keywords": [
+    "qimen",
+    "qimen-dunjia",
+    "奇门遁甲",
+    "奇门排盘",
+    "metaphysics",
+    "chinese-astrology",
+    "divination",
+    "拆补法",
+    "茅山法",
+    "置闰法"
+  ],
+  "author": "BigFishMarquis (鲲侯)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perfhelf/bigfishmarquis-qimen"
+  },
+  "homepage": "https://sunsetox.com"
+}
