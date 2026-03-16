@@ -1,20 +1,32 @@
 {
   "name": "bigfishmarquis-qimen",
   "version": "1.0.0",
-  "description": "鲲侯 · 星河易道 奇门遁甲排盘引擎 — 全自研，覆盖年/月/日/时家四层排盘，支持拆补/茅山/置闰三种起局法",
+  "description": "鲲侯 · 星河易道 奇门遁甲排盘引擎 | Qimen Dun Jia Divination Engine — Full-featured Chinese metaphysics charting with 4 layers (Year/Month/Day/Hour), 3 methods (ChaiBu/MaoShan/ZhiRun), 81 patterns interpretation. Zero dependencies.",
   "main": "src/engine.ts",
   "types": "src/types.ts",
   "keywords": [
     "qimen",
     "qimen-dunjia",
+    "qi-men-dun-jia",
     "奇门遁甲",
     "奇门排盘",
     "metaphysics",
+    "chinese-metaphysics",
     "chinese-astrology",
     "divination",
+    "feng-shui",
+    "fortune-telling",
+    "i-ching",
+    "yi-jing",
     "拆补法",
     "茅山法",
-    "置闰法"
+    "置闰法",
+    "nine-palaces",
+    "ba-men",
+    "ba-shen",
+    "jiu-xing",
+    "typescript",
+    "charting-engine"
   ],
   "author": "BigFishMarquis (鲲侯)",
   "license": "MIT",
@@ -22,5 +34,15 @@
     "type": "git",
     "url": "https://github.com/perfhelf/bigfishmarquis-qimen"
   },
-  "homepage": "https://sunsetox.com"
+  "homepage": "https://xuebz.com/?chart=qimen",
+  "bugs": {
+    "url": "https://github.com/perfhelf/bigfishmarquis-qimen/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/perfhelf"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
