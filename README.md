@@ -3,9 +3,12 @@
 ## BigFishMarquis Qimen Dun Jia Engine
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg)](https://opensource.org/licenses/MIT)
+[![Demo](https://img.shields.io/badge/Demo-Live-brightgreen)](https://xuebz.com/?chart=qimen)
 
 > 基于 TypeScript 的全自研奇门遁甲排盘引擎，覆盖年/月/日/时家四层排盘，支持拆补、茅山、置闰三种起局法。
 > 零外部引擎依赖，经过 500+ 样本跨 300 年验证。
+>
+> 🎯 **在线演示**: [xuebz.com/?chart=qimen](https://xuebz.com/?chart=qimen)
 
 ---
 
@@ -140,5 +143,6 @@ const chart = shiJiaGenerate(
 
 ## 🔗 链接
 
-- **产品**: [鲲侯 · 星河易道](https://sunsetox.com) — 八字·紫微·奇门·占星 专业命理推演引擎
+- **产品**: [鲲侯 · 星河易道](https://xuebz.com) — 八字·紫微·奇门·占星 专业命理推演引擎
+- **在线演示**: [奇门排盘 Demo](https://xuebz.com/?chart=qimen)
 - **GitHub**: [perfhelf/bigfishmarquis-qimen](https://github.com/perfhelf/bigfishmarquis-qimen)
